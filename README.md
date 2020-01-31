@@ -10,12 +10,12 @@ npm install function-parameters
 var parameters = require("function-parameters");
 parameters(function (a, b){}); // ["a","b"]
 parameters((a,b) => {}); // ["a","b"]
-parameters(([a,b]) => {}); // ["[a,b]"]
-parameters(({a,b}) => {}); // ["{a,b}"]
-parameters((a, ...b) => {}); // ["a","...b"]
+//parameters(([a,b]) => {}); // ["[a,b]"]
+//parameters(({a,b}) => {}); // ["{a,b}"]
+//parameters((a, ...b) => {}); // ["a","...b"]
 parameters((a,b) => null); // ["a","b"]
-parameters(class A{constructor(a,b){}}); // ["a","b"]
+//parameters(class A{constructor(a,b){}}); // ["a","b"]
 parameters((class A{x(a,b){}}).prototype.x); // ["a","b"]
-parameters(function (a, b /*, c*/) {}); // ["a","b"]
+//parameters(function (a, b /*, c*/) {}); // ["a","b"]
 ```
 
