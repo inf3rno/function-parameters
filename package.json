@@ -1,6 +1,6 @@
 {
   "name": "@inf3rno/function-parameters",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Parsing function parameter list even for ES6 syntax.",
   "keywords": [
     "JSON",
